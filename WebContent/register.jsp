@@ -29,8 +29,8 @@
 				<td><input type="password" name="password"></td>
 			</tr>
 			<tr>
-				<td><input type="submit" name="submit" value="login"></td>
-				<td><a href="register.jsp">Registration</a></td>
+				<td><input type="submit" name="submit" value="Register"></td>
+				
 			</tr>
 		</table>
 	</form>
