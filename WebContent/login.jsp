@@ -7,8 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="LoginRegister">
+	<form action="loginRegister" method="post">
 		<table style="background-color: skyblue; margin-left: 20px">
+			<tr> 
+			<td>${message} </td>
+	      <h3> ${successMessage} </h3>
+			</tr>
 			<tr>
 				<td><h3 style="color: black">Login Page</h3></td>
 			</tr>
