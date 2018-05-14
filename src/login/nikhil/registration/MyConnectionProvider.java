@@ -1,7 +1,7 @@
 package login.nikhil.registration;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.*;
+
 
 public class MyConnectionProvider implements DataSource {
 
@@ -10,11 +10,12 @@ public class MyConnectionProvider implements DataSource {
 	public static Connection getCon(){
 		
 		try{
-			Class.forName("com.mysql.jdbc.driver");
-			conn=DriverManager.getConnection(connURL, username, password);
+			Class.forName("com.mysql.jdbc.Driver");
+			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/logindb");
+			
 			
 		}catch(Exception e){
-			System.out.println(e);
+			e.printStackTrace();
 		}
 		return conn;
 		

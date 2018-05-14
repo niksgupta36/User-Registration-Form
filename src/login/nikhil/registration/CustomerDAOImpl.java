@@ -34,7 +34,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		Customer c = new Customer();
 		try{
 			conn = MyConnectionProvider.getCon();
-			ps=conn.prepareStatement("select * from customer where userid=? and password=?");
+			ps=conn.prepareStatement("select * from customer where Customer=? and Password=?");
 			ps.setString(1, userid );
 			ps.setString(2, password );
 			
@@ -51,7 +51,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 			System.out.println(e);
 		}
 
-		return null;
+		return c;
 	}
 
 }

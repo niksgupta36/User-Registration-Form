@@ -20,7 +20,7 @@ public class LoginRegister extends HttpServlet {
 	
 		CustomerDAO cd = new CustomerDAOImpl();
 		String userName=request.getParameter("username");
-		String password=request.getParameter("password");
+		String password=request.getParameter("password1");
 		String submitType=request.getParameter("submit");
 		
 		Customer c = cd.getCustomer(userName, password);
